@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "../sass/style.css",
+	"sources": [
+		"../sass/style.scss",
+		"../sass/_general.css"
+	],
+	"sourcesContent": [
+		"@import \"general\";",
+		"/* unvisited link */\na:link {\n    color: #FF0000;\n}\n\n/* visited link */\na:visited {\n    color: #000080;\n}\n\n/* mouse over link */\na:hover {\n    color: #FFC0CB;\n}\n\n/* selected link */\na:active {color: #D2B48C;\n}\n.googleCalendar{\n  position: relative;\n  height: 0;\n  width: 100%;\n  padding-bottom: 100% ;\n}\n\n.googleCalendar iframe{\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n}\nh1 {\n    text-align: center;\n}\nh2 {\n    text-align: center;\n}\n    h3 {\n    text-align: center;\n}\np {\n    text-align: center;\n}\np2 {\n    text-align: left;\n}\n    footer p{\n\ttext-align:center;\n\tfont-style:italic;\n\tfont-size:.8em;\n}\n#header {\nbackground-color:black;\ncolor:white;\ntext-align:center;\n padding:0px;\n}\n"
+	],
+	"mappings": "ACAA,oBAAoB;;AACpB,AAAC,CAAA,AAAA,KAAK,CAAC;EACH,KAAK,EAAE,OAAQ,GAClB;;AAED,kBAAkB;;AAClB,AAAC,CAAA,AAAA,QAAQ,CAAC;EACN,KAAK,EAAE,OAAQ,GAClB;;AAED,qBAAqB;;AACrB,AAAC,CAAA,AAAA,MAAM,CAAC;EACJ,KAAK,EAAE,OAAQ,GAClB;;AAED,mBAAmB;;AACnB,AAAC,CAAA,AAAA,OAAO,CAAC;EAAC,KAAK,EAAE,OAAQ,GACxB;;;AACD,AAAA,eAAe,CAAA;EACb,QAAQ,EAAE,QAAS;EACnB,MAAM,EAAE,CAAE;EACV,KAAK,EAAE,IAAK;EACZ,cAAc,EAAE,IAAM,GACvB;;;AAED,AAAgB,eAAD,CAAC,MAAM,CAAA;EACpB,QAAQ,EAAE,QAAS;EACnB,GAAG,EAAE,CAAE;EACP,IAAI,EAAE,CAAE;EACR,KAAK,EAAE,IAAK;EACZ,MAAM,EAAE,IAAK,GACd;;;AACD,AAAA,EAAE,CAAC;EACC,UAAU,EAAE,MAAO,GACtB;;;AACD,AAAA,EAAE,CAAC;EACC,UAAU,EAAE,MAAO,GACtB;;;AACG,AAAA,EAAE,CAAC;EACH,UAAU,EAAE,MAAO,GACtB;;;AACD,AAAA,CAAC,CAAC;EACE,UAAU,EAAE,MAAO,GACtB;;;AACD,AAAA,EAAE,CAAC;EACC,UAAU,EAAE,IAAK,GACpB;;;AACG,AAAO,MAAD,CAAC,CAAC,CAAA;EACX,UAAU,EAAC,MAAO;EAClB,UAAU,EAAC,MAAO;EAClB,SAAS,EAAC,IAAK,GACf;;;AACD,AAAA,OAAO,CAAC;EACR,gBAAgB,EAAC,KAAM;EACvB,KAAK,EAAC,KAAM;EACZ,UAAU,EAAC,MAAO;EACjB,OAAO,EAAC,GAAI,GACZ",
+	"names": []
+}
