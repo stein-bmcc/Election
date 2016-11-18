@@ -1,29 +1,727 @@
+/*
+====================================
+Modified Normalize.css Code
+
+This is a modified version of normalize.css
+It has been modified to remove some of the choices such as font-family, that a designer should make. Most of what is taken out is added in a separate starter stylesheet meant to be used in combination with this version of normalize.css
+====================================
+*/
+/*! normalize.css v4.2.0 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in IE and iOS.
+ */
+/* Document
+   ========================================================================== */
+/* line 23, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_normalized-reset.scss */
+html {
+  /*  font-family: sans-serif;  1 */
+  /* Removed in order to allow designer to set the default fonts */
+  /*   line-height: 1.15;*/
+  /* 2 */
+  /* Removed in order to allow designer to set the default line-height */
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+/* line 37, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_normalized-reset.scss */
+body {
+  margin: 0;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 45, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_normalized-reset.scss */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+/* Removed in order to allow designer to set the default typography */
+/*
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+*/
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+/* line 78, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_normalized-reset.scss */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+/* line 88, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_normalized-reset.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+/* line 97, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_normalized-reset.scss */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 108, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_normalized-reset.scss */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+/* line 121, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_normalized-reset.scss */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+}
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+/* line 131, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_normalized-reset.scss */
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+/* line 141, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_normalized-reset.scss */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+/* line 151, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_normalized-reset.scss */
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+/* line 160, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_normalized-reset.scss */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 170, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_normalized-reset.scss */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+/* line 181, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_normalized-reset.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+/* line 189, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_normalized-reset.scss */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+/* line 198, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_normalized-reset.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+/* line 207, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_normalized-reset.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 215, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_normalized-reset.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 219, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_normalized-reset.scss */
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 230, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_normalized-reset.scss */
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+/* line 239, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_normalized-reset.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+/* line 248, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_normalized-reset.scss */
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+/* line 256, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_normalized-reset.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+/*Removed to allow the designer to set the typography*/
+/*
+button,
+input,
+optgroup,
+select,
+textarea {
+*/
+/* font-family: sans-serif;*/
+/* 1 */
+/*  font-size: 100%;*/
+/* 1 */
+/*  line-height: 1.15;*/
+/* 1 */
+/*  margin: 0;*/
+/* 2 */
+/* }*/
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+/* line 288, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_normalized-reset.scss */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+/* line 298, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_normalized-reset.scss */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+/* line 309, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_normalized-reset.scss */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+/* line 320, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_normalized-reset.scss */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+/* line 332, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_normalized-reset.scss */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+/*Removing opinionated styling*/
+/*
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+*/
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+/* line 360, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_normalized-reset.scss */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+/* line 374, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_normalized-reset.scss */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+/* line 383, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_normalized-reset.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+/* line 392, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_normalized-reset.scss */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+/* line 402, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_normalized-reset.scss */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+/* line 412, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_normalized-reset.scss */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
+ */
+/* line 421, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_normalized-reset.scss */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+/* line 431, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_normalized-reset.scss */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+/* line 444, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_normalized-reset.scss */
+details,
+menu {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+/* line 453, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_normalized-reset.scss */
+summary {
+  display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 464, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_normalized-reset.scss */
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+/* line 472, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_normalized-reset.scss */
+template {
+  display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+/* line 483, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_normalized-reset.scss */
+[hidden] {
+  display: none;
+}
+
+/* They styles in the following are similar to the effect of a reset but have be separated out so that it is easier to add default styles.  These are suggested styles that the designer should change and add to set the typography
+
+Much of this is modified from two original sources
+HTML 5 Doctor Reset: http://html5doctor.com/html-5-reset-stylesheet/
+This is in the public domain. It has been modified to remove things redundant with Normalize and separate out styles that may need to be styled separately.
+
+Normalize.css: git.io/normalize
+The version modified is: normalize.css v3.0.1 | MIT License
+A few pieces of normalize.css that more directly affected typographic choices (such as font-family) were moved here so normalize.css could be more or less left alone.
+*/
+/* RESPONSIVE PREPARATION
+   ====================================================================
+   Use these "as is"
+*/
+/*The following 7 lines are from Paul Irish and apply a border-box model.
+See this page for more info: http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+/* apply a natural box layout model to all elements, but allowing components to change */
+/* line 20, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_responsive-base.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 23, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_responsive-base.scss */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Basic Responsive Images and Video */
+/* line 28, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_responsive-base.scss */
+img, video {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+/* Embedded Video Styles
+
+    These can be used to help add embedded video content, like YouTube videos, to your page. These styles require you set up your HTML in a specific way. See this CodePen for an example of it in use: http://codepen.io/profstein/pen/mArLRj
+*/
+/* line 40, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_responsive-base.scss */
+.videoWrapper {
+  position: relative;
+  padding-top: 25px;
+  height: 0;
+}
+
+/* line 46, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_responsive-base.scss */
+.videoWrapper.ratio-16-9 {
+  padding-bottom: 56.25%;
+  /* 16:9 aspect ratio video */
+}
+
+/* line 50, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_responsive-base.scss */
+.videoWrapper.ratio-4-3 {
+  padding-bottom: 75%;
+  /* 4:3 aspect ratio video */
+}
+
+/* line 54, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_responsive-base.scss */
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ==========================================================================
+   Base Typographic Styles
+   ==========================================================================
+
+    The following typographic styles are meant to be changed. They are set so that you know what to style, but don't tell you how to style them. For example all of the headings are set to the same font-size and line-height. That should be changed.
+
+*/
+/* Default Typography
+   ====================================================================
+   !! CHANGE FROM HERE DOWN to suit the needs of your site
+   You can use a resource like http://type-scale.com/ to help you choose font-size
+*/
+/*
+Set a default font-family, font-size and line-height in the html
+This will set the default for the entire site.
+*/
+/* line 20, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_typography.scss */
+html {
+  font-size: 100%;
+  font-family: sans-serif;
+  /*change to add a proper font stack */
+  font-size: 1em;
+  line-height: 1.3;
+  /* usually something between 1.3 and 1.6 is most readable without feeling too far apart */
+}
+
+/*Usually at least a bottom margin is given to separate paragraphs. font-size and font-family are inherited from body*/
+/* line 28, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_typography.scss */
+p {
+  margin: 0 0 1em 0;
+}
+
+/*Set a default font-family for the headings*/
+/* line 33, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: serif;
+  /*change to add a proper font stack */
+}
+
+/*
+Set the font-size of each heading individually
+When you set the font-size also set the line-height.
+You may also want to set the top and bottom margins and padding
+*/
+/* line 42, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_typography.scss */
+h1 {
+  font-size: 1em;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 49, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_typography.scss */
+h2 {
+  font-size: 1em;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 56, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_typography.scss */
+h3 {
+  font-size: 1em;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 63, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_typography.scss */
+h4 {
+  font-size: 1em;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 70, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_typography.scss */
+h5 {
+  font-size: 1em;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 77, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_typography.scss */
+h6 {
+  font-size: 1em;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+/*Other relatively common elements to style. Uncomment and change to your liking*/
+/*These are used to display text like pre-formatted text and code samples*/
+/* line 88, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_typography.scss */
+pre, code, kbd, samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+  line-height: 1.15;
+  margin: 0;
+  padding: 0;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Set the font styles related to forms
+ */
+/* line 103, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_typography.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+/* ==========================================================================
+   Add your custom styles here
+   ========================================================================== */
 /* unvisited link */
 /* line 2, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_general.css */
 a:link {
-  color: #FF0000; }
+  color: #FF0000;
+}
 
 /* visited link */
 /* line 7, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_general.css */
 a:visited {
-  color: #000080; }
+  color: #000080;
+}
 
 /* mouse over link */
 /* line 12, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_general.css */
 a:hover {
-  color: #FFC0CB; }
+  color: #FFC0CB;
+}
 
 /* selected link */
 /* line 17, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_general.css */
 a:active {
-  color: #D2B48C; }
+  color: #D2B48C;
+}
 
 /* line 19, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_general.css */
 .googleCalendar {
   position: relative;
   height: 0;
   width: 100%;
-  padding-bottom: 100%; }
+  padding-bottom: 100%;
+}
 
 /* line 26, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_general.css */
 .googleCalendar iframe {
@@ -31,39 +729,47 @@ a:active {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+}
 
 /* line 33, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_general.css */
 h1 {
-  text-align: center; }
+  text-align: center;
+}
 
 /* line 36, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_general.css */
 h2 {
-  text-align: center; }
+  text-align: center;
+}
 
 /* line 39, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_general.css */
 h3 {
-  text-align: center; }
+  text-align: center;
+}
 
 /* line 42, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_general.css */
 p {
-  text-align: center; }
+  text-align: center;
+}
 
 /* line 45, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_general.css */
 p2 {
-  text-align: left; }
+  text-align: left;
+}
 
 /* line 48, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_general.css */
 footer p {
   text-align: center;
   font-style: italic;
-  font-size: .8em; }
+  font-size: .8em;
+}
 
 /* line 53, /Users/Mannyxdeep/Documents/MMP240-Midterm/sass/_general.css */
 #header {
   background-color: black;
   color: white;
   text-align: center;
-  padding: 0px; }
+  padding: 0px;
+}
 
 /*# sourceMappingURL=../css/style.map */
