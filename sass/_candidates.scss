@@ -1,0 +1,27 @@
+
+//This is the responsive layout for the canidate page
+.candidates{
+    
+    
+    //style from tablet and up
+    @include for-tablet-portrait-up{
+        //added a federal candidates div around all four of the federal candidates
+        .federal-candidate{
+            @include container;
+        }  
+        .trump{
+            @include span(6 break);
+        }
+        .clinton{
+            @include span(6 last);
+        }
+        .stein{
+            @include span(6 break);
+        }
+        .johnson{
+            @include span(6 last);
+        }
+        
+    }
+    //end style tablet up
+}

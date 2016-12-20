@@ -1,4 +1,7 @@
 @import "normalized-reset";
+@import "layout"; //remember to import this after adding
 @import "responsive-base";
 @import "typography";
+@import "navigation"; //importing navigation
 @import "general";
+@import "candidates"; //you can make a separate partial to handle the layout for each page.

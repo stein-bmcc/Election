@@ -1,0 +1,53 @@
+//This file contains the layout and breakpoint setup
+
+// NOTE: This requires that you have Susy available. http://susy.oddbird.net
+// If you are using an app like Scout http://scout-app.io then it will add susy automatically when you write @import "susy";
+
+//GLOBAL SUSY LAYOUT SETTINGS ======================================
+@import "susy";
+$global-box-sizing: border-box;
+//This creates settting with a 12 column grid, gutters that are 1/2 the width of 1 column, gutters inside by setting the padding, a maximum width of 1500px and border-box
+$susy: (
+    columns: 12,
+    gutters: 1/2,
+    gutter-position: inside,
+    container: 1900px,
+    global-box-sizing: border-box,
+);
+
+// BREAKPOINT SETUP =============================================
+//This is forked from David Gilbertson's CSS Breakpoints, http://codepen.io/davidgilbertson/pen/aBpJzO, and modified to create variables for the breakpoints.
+
+//Set your breakpoints here (phone is everything below $tablet-portrait)
+$tablet-portrait: 600px;
+$tablet-landscape: 900px;
+$desktop: 1200px;
+$big-desktop: 1800px;
+
+@mixin for-phone-only {
+  @media (max-width: $tablet-portrait - 1px) { @content; }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: $tablet-portrait) { @content; }
+}
+@mixin for-tablet-portait-only {
+  @media (min-width: $tablet-portrait) and (max-width: $tablet-landscape - 1px) { @content; }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: $tablet-landscape) { @content; }
+}
+@mixin for-tablet-landscape-only {
+  @media (min-width: $tablet-landscape) and (max-width: $desktop - 1px) { @content; }
+}
+@mixin for-below-desktop {
+  @media (max-width: $desktop - 1px) { @content; }
+}
+@mixin for-desktop-up {
+  @media (min-width: $desktop) { @content; }
+}
+@mixin for-desktop-only {
+  @media (min-width: $desktop) and (max-width: $big-desktop -1px) { @content; }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: $big-desktop) { @content; }
+}
